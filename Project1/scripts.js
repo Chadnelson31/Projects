@@ -1,8 +1,38 @@
+"use strict";
 var $ = function(id) {
     return document.getElementById(id);
 };
-function calculateMpg(desktops, laptops) {
-    var mpg = ((desktops * 40) + (laptops * 20));
-    mpg = mpg.toFixed(1);
-    return mpg;
+function calculateOffer(desktops, laptops) {
+    var offer = ((desktops * 40) + (laptops * 20));
+    offer = offer.toFixed(1);
+    return offer;
 };
+
+var processEntries = function() {
+    var desktops = parseInt($("desktops").value);
+    var laptops = parseInt($("laptops").value);
+
+    if (isNaN(desktops)) {
+        $("desktopsError").firstChild.nodeValue = "Please enter a number above 0";
+    }
+    if (isNaN(laptops)) {
+        $("laptopsError").firstChild.nodeValue = "Please enter a number above 0";
+    } else {
+        $("desktopsError").firstChild.nodeValue = "";
+        $("laptopsError").firstChild.nodeValue = "";
+        $("offer").value = calculateOffer(desktops, laptops);
+    }
+};
+
+var clearEntries = function () {
+    $("desktops").value = "";
+    $("laptops").value = "";
+    $("desktopsError").value = "";
+    $("laptopsError").value = "";
+    };
+
+window.onload= function () {
+    $("submit").onclick = processEntries();
+    $("reset").onclick =  clearEntries();
+};
+

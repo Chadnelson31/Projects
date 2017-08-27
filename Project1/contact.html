@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts.js"></script>
 
     <title>Chad Nelson</title>
 
@@ -39,15 +40,17 @@
             <p>
             <label for="desktops">Number of desktops ($40 each):</label>
             <input type="text" id="desktops">
+                <span id="desktopsError">*</span><br>
 
             <label for="laptops">Number of laptops ($20 each):</label>
             <input type="text" id="laptops">
+                <span id="laptopsError">*</span><br>
 
             <label for="offer">Offer:</label>
             <input type="email" id="offer">
 
-                <input type="submit" id="submit" value="Submit" class="btn">
-                <input type="reset" id="reset" value="Reset" class="btn">
+                <input type="button" id="submit" value="Submit" class="btn">
+                <input type="button" id="reset" value="Reset" class="btn">
             </p>
 
         </main>
