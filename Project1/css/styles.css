@@ -1,0 +1,443 @@
+/* Style sheet created by: Chad Nelson-Toohey, 11/7/2016*/
+
+/*Style for body specifies a background color */
+body {
+    background-color: #34efe6;
+}
+
+/*style to create a fluid image */
+img {
+    max-width: 100%;
+}
+
+/*Styles for Mobile Layout */
+
+
+/*Style for container centers the page and sets the element width */
+#container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Style for header specifies top and bottom margins, background color, rounded border, shadow, and alignment */
+header {
+
+    height: 10em;
+    text-align: center;
+}
+
+
+
+/* Style for nav specifies text properties, padding, margins, and borders */
+nav {
+    font-family: Georgia, "Courier New", serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -1.5em;
+}
+
+nav ul {
+    padding: 0;
+    margin-top:0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins and padding for list items within the navigation */
+nav li {
+    background-color: #FFFFFF;
+    border-radius: 2em;
+    list-style-type: none;
+    margin: 0.3em;
+    padding: 0.4em;
+    opacity: 0.85;
+}
+
+/*Style changes navigation link text color to white and removes the underline */
+nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Style displays the mobile class */
+.mobile {
+    display: inline;
+}
+
+/* Style hides the desktop class */
+.desktop {
+
+}
+/* Style for main specifies a block display, text properties, margins, padding, rounded border, and shadow */
+main {
+    display: block;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1em;
+    margin-top: .5em;
+    padding: 1em;
+    border-radius: 2em 2em 2em 2em;
+    background-color: #FFFFFF;
+    opacity: 0.85;
+}
+
+
+/* Style for anchor elements within th emain element */
+main a {
+    background-color: #34efe6;
+    border-radius: 1em;
+    color:#496866;
+    font-weight: bold;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+#languages {
+    display: block;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1em;
+    margin-top: .5em;
+    padding: 1em;
+    border-radius: 2em 2em 2em 2em;
+    background-color: #FFFFFF;
+    opacity: 0.85;
+}
+
+#OS {
+    display: block;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1em;
+    margin-top: .5em;
+    padding: 1em;
+    border-radius: 2em 2em 2em 2em;
+    background-color: #FFFFFF;
+    opacity: 0.85;
+}
+
+#commandline {
+    display: block;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1em;
+    margin-top: .5em;
+    padding: 1em;
+    border-radius: 2em 2em 2em 2em;
+    background-color: #FFFFFF;
+    opacity: 0.85;
+}
+
+/*Style for footer specifies font size, text alignment, and top margin */
+footer {
+    font-size: .70em;
+    text-align: center;
+    margin-top: 2em;
+    color: #FFFFFF;
+}
+
+/* Style for anchor elements within the footer */
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Style hides the tablet class */
+.tablet {
+    display: none;
+}
+
+
+/* Style rule for input, select, and texarea form elements */
+input, select, textarea {
+    display: inline;
+    margin-bottom: 1em;
+}
+
+/**/
+label {
+    display: block;
+}
+
+
+#copyright {
+    float: right;
+    margin-top: 2em;
+    width: 80%
+}
+
+#social {
+    float: left;
+    width: 20%;
+}
+
+#social img {
+    padding: 0.5em;
+}
+
+.btn {
+    display: block;
+}
+
+h1 {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#table {
+    display: none;
+}
+
+#desktopOS {
+    display: none;
+}
+
+/* Media query for tablet viewport targets screen size with a minimum width of 660px */
+
+/* Media query for tablet viewport targets screen size with a minimum width of 660px */
+
+@media only screen and (min-width: 660px) {
+
+    /*Style specifies a horizontal display for navigation links */
+    nav li {
+        display: inline;
+        margin-left: 1%;
+        margin-right: 1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        width: 20%;
+        white-space: nowrap;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    /*Style specifies clear and top margin properties for the main element */
+    main {
+        clear: left;
+        margin-top: -0.3em;
+        border-radius: 0;
+        overflow: auto;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+        background-color: #FFFFFF;
+        opacity: 0.85;
+        padding: 1%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    main a {
+
+        color:#496866;
+        font-weight: bold;
+        padding: 0.5em;
+        text-decoration: none;
+    }
+
+
+    .home {
+        text-align: center;
+    }
+
+
+    textarea {
+        display: block;
+
+        margin-right: auto;
+    }
+
+    .btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #table {
+        display: none;
+    }
+
+    #os {
+        display: block;
+    }
+
+    #desktoplanguages {
+        display: block;
+    }
+
+    #command {
+        display: block;
+    }
+
+    #desktopOS {
+        display: block;
+    }
+
+    main img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+
+
+@media only screen and (min-width: 1087px) {
+    header {
+        float: left;
+    }
+
+    nav {
+        display: block;
+        float: right;
+        margin-top: 6em;
+        width: 40em;
+        background-color: #FFFFFF;
+        border-radius: 2em 2em 0 0;
+        opacity: 0.85;
+    }
+
+    header {
+        height: auto;
+        width: auto;
+    }
+
+    h1, h3, p, a {
+        text-align: left;
+    }
+
+    main a {
+        background-color: transparent;
+    }
+
+    .tablet {
+        clear: left;
+        margin-top: -0.3em;
+        border-radius: 0;
+        overflow: auto;
+    }
+
+    nav li a:hover {
+        color: #34efe6;
+        font-style: italic;
+    }
+
+    nav li a:visited {
+        color: #496866;
+    }
+
+    nav li a:active {
+        color: #FFFFFF;
+    }
+
+    a:hover {
+        color: #34efe6;
+    }
+
+    #copyright {
+        float: none;
+        text-align: center;
+        width: 100%
+
+    }
+
+    #social {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    footer p{
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    #OS {
+        display: none;
+    }
+
+
+    #table {
+        display: block;
+    }
+
+    th, td {
+        border: 0.1em solid #000000;
+        padding: 1em;
+    }
+
+    table {
+        float: right;
+        border:0.1em solid #000000;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20em;
+        width: 80%;
+        text-align: center;
+        background-color: #34efe6;
+    }
+
+    th {
+        background-color: #1D1D1C;
+        color: #FFFFFF;
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-bottom: 0.5em;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    #desktoplanguages {
+        display: block;
+    }
+
+    #command {
+        display: block;
+        float: left;
+    }
+
+    #command img {
+        float: right;
+        padding-bottom: -20em;
+    }
+
+    #desktopOS {
+        display: none;
+    }
+
+    main img {
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+
+    }
+
+
+}
+
+
