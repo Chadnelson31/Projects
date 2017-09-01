@@ -3,8 +3,7 @@ var $ = function(id) {
     return document.getElementById(id);
 };
 function calculateOffer(desktops, laptops) {
-    var offer = ((desktops * 40) + (laptops * 20));
-    offer = offer.toFixed(1);
+    var offer = ((desktops * 20) + (laptops * 10));
     return offer;
 };
 
@@ -27,12 +26,13 @@ var processEntries = function() {
 var clearEntries = function () {
     $("desktops").value = "";
     $("laptops").value = "";
-    $("desktopsError").value = "";
-    $("laptopsError").value = "";
+    $("desktopsError").firstChild.nodeValue = "*";
+    $("laptopsError").firstChild.nodeValue = "*";
+    $("offer").value = "";
     };
 
 window.onload= function () {
-    $("submit").onclick = processEntries();
-    $("reset").onclick =  clearEntries();
+    $("submit").onclick = processEntries;
+    $("reset").onclick =  clearEntries;
 };
 
