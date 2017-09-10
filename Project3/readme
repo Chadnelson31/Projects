@@ -1,0 +1,10 @@
+Added script localStorage.js to /scripts folder
+    - set the script to pull variables in localstorage for acknowledgement page
+
+modified both newsletter.js and feedback.js to store local variables
+
+modified feedback.js to include phone number regex validation
+
+modified registered.html to include ids for printing submitted information from contact.html and newsletter.html
+
+made sure phone number format stays from storage to print
